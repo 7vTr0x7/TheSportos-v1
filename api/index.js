@@ -11,21 +11,13 @@ const app = express();
 const httpServer = createServer(app); // Create an HTTP server
 const io = new Server(httpServer, {
   cors: {
-    origin: [
-      "http://localhost:5173",
-      "https://thesprotos.vercel.app",
-      "http://localhost:5174",
-    ],
+    origin:"https://the-sportos-v1-frontend.vercel.app"
     credentials: true,
   },
 });
 
 const corsOptions = {
-  origin: [
-    "http://localhost:5173",
-    "https://thesprotos.vercel.app",
-    "http://localhost:5174",
-  ],
+  origin: "https://the-sportos-v1-frontend.vercel.app/",
   credentials: true,
 };
 
