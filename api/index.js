@@ -11,13 +11,19 @@ const app = express();
 const httpServer = createServer(app); // Create an HTTP server
 const io = new Server(httpServer, {
   cors: {
-    origin: "https://the-sportos-v1-frontend.vercel.app",
+    origin: [
+      "https://the-sportos-v1-frontend.vercel.app",
+      "https://the-sportos-admin.vercel.app",
+    ],
     credentials: true,
   },
 });
 
 const corsOptions = {
-  origin: "https://the-sportos-v1-frontend.vercel.app",
+  origin: [
+    "https://the-sportos-v1-frontend.vercel.app",
+    "https://the-sportos-admin.vercel.app",
+  ],
   credentials: true,
 };
 
