@@ -37,11 +37,14 @@ const Sponsor = ({ text }) => {
     // Initial banner fetch
     getSponsorData(apiUrl);
     // Initialize WebSocket connection
-    const socket = io(apiUrl, { transports: ["websocket"] });
+    const socket = io(apiUrl, {
+      transports: ["websocket", "polling"], // Allow fallback
+      path: "/socket.io/", // Match server's path
+    });
 
     socket.on("dataUpdated", () => {
       console.log("Data updated, refreshing...");
-       getSponsorData(apiUrl);// Fetch latest data
+      getSponsorData(apiUrl); // Fetch latest data
     });
 
     socket.on("connect_error", (error) => {
