@@ -88,6 +88,10 @@ const App = () => {
       console.error("Socket connection failed:", error.message);
     });
 
+    socket.on("disconnect", (reason) => {
+      console.error("Disconnected:", reason);
+    });
+
     return () => {
       socket.disconnect();
     };

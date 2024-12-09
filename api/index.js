@@ -37,6 +37,8 @@ const io = new Server(httpServer, {
     credentials: true,
   },
   transports: ["websocket"], // Force WebSocket transport for better compatibility
+  wssEngine: ["ws", "wss"], // Specify the WebSocket engine to use
+  path: "/socket.io/", // Ensure the correct path is set for WebSocket requests
 });
 
 app.set("io", io);
