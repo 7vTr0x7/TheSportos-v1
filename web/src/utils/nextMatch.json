@@ -1,0 +1,44 @@
+{
+  "status": "upcoming",
+  "teams": {
+    "team1": {
+      "name": "Man United",
+      "logo": "https://i.imgur.com/J6o9XHo.png"
+    },
+    "team2": {
+      "name": "Thesprotos",
+      "logo": "https://i.imgur.com/J6o9XHo.png"
+    }
+  },
+  "match": {
+    "daysLeft": 1,
+    "hoursLeft": 14,
+    "location": "Etihad Stadium",
+    "matchType": "Head-to-Head"
+  },
+  "headToHead": {
+    "played": 10,
+    "wins": {
+      "team1": 2,
+      "team2": 5
+    },
+    "homeWins": {
+      "team1": 2,
+      "team2": 3
+    },
+    "awayWins": {
+      "team1": 0,
+      "team2": 2
+    }
+  },
+  "previousResult": {
+    "team1": {
+      "name": "Man United",
+      "score": 1
+    },
+    "team2": {
+      "name": "Man City",
+      "score": 2
+    }
+  }
+}

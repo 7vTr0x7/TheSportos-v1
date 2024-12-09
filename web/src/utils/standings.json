@@ -1,0 +1,119 @@
+{
+  "leagues": {
+    "leagues": ["Premier League", "La Liga"],
+    "Premier League": [
+      {
+        "position": 1,
+        "club": "Thesprotos",
+        "P": 3,
+        "W": 13,
+        "D": 3,
+        "L": 2,
+        "Goals": "5:1",
+        "last5": ["W", "W", "D", "W", "W"],
+        "Pts": 32
+      },
+      {
+        "position": 2,
+        "club": "Liverpool",
+        "P": 3,
+        "W": 13,
+        "D": 3,
+        "L": 2,
+        "Goals": "5:1",
+        "last5": ["W", "D", "W", "W", "D"],
+        "Pts": 30
+      },
+      {
+        "position": 3,
+        "club": "Manchester United",
+        "P": 2,
+        "W": 11,
+        "D": 2,
+        "L": 1,
+        "Goals": "4:2",
+        "last5": ["D", "W", "W", "D", "L"],
+        "Pts": 25
+      },
+      {
+        "position": 4,
+        "club": "West Ham United",
+        "P": 2,
+        "W": 11,
+        "D": 3,
+        "L": 1,
+        "Goals": "3:2",
+        "last5": ["D", "W", "W", "L", "D"],
+        "Pts": 23
+      },
+      {
+        "position": 5,
+        "club": "Arsenal FC",
+        "P": 1,
+        "W": 10,
+        "D": 1,
+        "L": 1,
+        "Goals": "5:1",
+        "last5": ["L", "W", "D", "W", "L"],
+        "Pts": 22
+      }
+    ],
+    "La Liga": [
+      {
+        "position": 1,
+        "club": "Real Madrid",
+        "P": 4,
+        "W": 15,
+        "D": 2,
+        "L": 1,
+        "Goals": "6:2",
+        "last5": ["W", "W", "W", "D", "W"],
+        "Pts": 35
+      },
+      {
+        "position": 2,
+        "club": "Barcelona",
+        "P": 4,
+        "W": 14,
+        "D": 3,
+        "L": 1,
+        "Goals": "4:1",
+        "last5": ["D", "W", "W", "W", "D"],
+        "Pts": 33
+      },
+      {
+        "position": 3,
+        "club": "Atletico Madrid",
+        "P": 3,
+        "W": 12,
+        "D": 2,
+        "L": 2,
+        "Goals": "3:0",
+        "last5": ["W", "W", "D", "L", "W"],
+        "Pts": 29
+      },
+      {
+        "position": 4,
+        "club": "Sevilla",
+        "P": 3,
+        "W": 11,
+        "D": 3,
+        "L": 3,
+        "Goals": "5:3",
+        "last5": ["L", "W", "D", "L", "W"],
+        "Pts": 27
+      },
+      {
+        "position": 5,
+        "club": "Valencia",
+        "P": 2,
+        "W": 10,
+        "D": 4,
+        "L": 3,
+        "Goals": "2:2",
+        "last5": ["L", "W", "L", "W", "D"],
+        "Pts": 26
+      }
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "teams": [
+    {
+      "name": "Real Madrid",
+      "players": [
+        {
+          "number": 1,
+          "name": "Ethan Carter",
+          "position": "RW"
+        },
+        {
+          "number": 2,
+          "name": "Liam Hernandez",
+          "position": "ST"
+        },
+        {
+          "number": 3,
+          "name": "Oliver Dawson",
+          "position": "RW"
+        },
+        {
+          "number": 4,
+          "name": "Jordan Sinclair",
+          "position": "CDM"
+        },
+        {
+          "number": 5,
+          "name": "Noah Hunter",
+          "position": "GK"
+        }
+      ]
+    },
+    {
+      "name": "Atletico",
+      "players": [
+        {
+          "number": 6,
+          "name": "Miguel Fernandez",
+          "position": "CM"
+        },
+        {
+          "number": 7,
+          "name": "Carlos Mendoza",
+          "position": "CB"
+        },
+        {
+          "number": 8,
+          "name": "Javier Garcia",
+          "position": "LW"
+        },
+        {
+          "number": 9,
+          "name": "Roberto Gomez",
+          "position": "ST"
+        },
+        {
+          "number": 10,
+          "name": "Diego Lopez",
+          "position": "RW"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "_id": "2",
+    "competition": "Champions League",
+    "league_logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ec/UEFA_Champions_League_logo_2.svg/220px-UEFA_Champions_League_logo_2.svg.png",
+    "date": "Wednesday, 25th October",
+    "stadium": "Allianz Arena",
+    "team1": {
+      "name": "Bayern Munich",
+      "logo_url": "https://i.imgur.com/7FUqFZ4.png"
+    },
+    "team2": {
+      "name": "Real Madrid",
+      "logo_url": "https://i.imgur.com/J6o9XHo.png"
+    },
+    "status": "Complete",
+    "score": { "team1": 2, "team2": 2 },
+    "FT": false
+  },
+  {
+    "_id": "3",
+    "competition": "Premier League",
+    "league_logo_url": "https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg",
+    "date": "Saturday, 28th October",
+    "stadium": "Old Trafford",
+    "team1": {
+      "name": "Manchester United",
+      "logo_url": "https://i.imgur.com/7FUqFZ4.png"
+    },
+    "team2": {
+      "name": "Liverpool",
+      "logo_url": "https://i.imgur.com/J6o9XHo.png"
+    },
+    "status": "Complete",
+    "score": { "team1": 1, "team2": 3 },
+    "FT": false
+  },
+  {
+    "_id": "4",
+    "competition": "Serie A",
+    "league_logo_url": "https://upload.wikimedia.org/wikipedia/en/e/eb/Serie_A_logo_%282019%29.svg",
+    "date": "Sunday, 29th October",
+    "stadium": "San Siro",
+    "team1": {
+      "name": "AC Milan",
+      "logo_url": "https://i.imgur.com/7FUqFZ4.png"
+    },
+    "team2": {
+      "name": "Inter Milan",
+      "logo_url": "https://i.imgur.com/J6o9XHo.png"
+    },
+    "status": "Complete",
+    "score": { "team1": 2, "team2": 1 },
+    "FT": false
+  },
+  {
+    "_id": "5",
+    "competition": "La Liga",
+    "league_logo_url": "https://upload.wikimedia.org/wikipedia/en/thumb/9/92/LaLiga_Santander.svg/1200px-LaLiga_Santander.svg.png",
+    "date": "Monday, 30th October",
+    "stadium": "Camp Nou",
+    "team1": {
+      "name": "Barcelona",
+      "logo_url": "https://i.imgur.com/7FUqFZ4.png"
+    },
+    "team2": {
+      "name": "Atletico Madrid",
+      "logo_url": "https://i.imgur.com/J6o9XHo.png"
+    },
+    "status": "Complete",
+    "score": { "team1": 1, "team2": 0 },
+    "FT": false
+  },
+  {
+    "_id": "6",
+    "competition": "Bundesliga",
+    "league_logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Bundesliga_logo_%282017%29.svg/220px-Bundesliga_logo_%282017%29.svg.png",
+    "date": "Saturday, 28th October",
+    "stadium": "Signal Iduna Park",
+    "team1": {
+      "name": "Borussia Dortmund",
+      "logo_url": "https://i.imgur.com/7FUqFZ4.png"
+    },
+    "team2": {
+      "name": "RB Leipzig",
+      "logo_url": "https://i.imgur.com/J6o9XHo.png"
+    },
+    "status": "Complete",
+    "score": { "team1": 3, "team2": 2 },
+    "FT": false
+  }
+]

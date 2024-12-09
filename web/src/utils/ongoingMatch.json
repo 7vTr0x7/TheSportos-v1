@@ -1,0 +1,30 @@
+{
+  "_id": "1",
+  "status": "Ongoing",
+  "live": true,
+  "time": "41m",
+  "stadium": "Old Trafford",
+  "matchType": "Practice",
+  "club1": {
+    "name": "Man United",
+    "imageUrl": "",
+    "established": "2009",
+    "homeGround": "2009",
+    "players": "14",
+    "venue": "Old Trafford"
+  },
+  "club2": {
+    "name": "Man United"
+  },
+  "score": {
+    "goals": [
+      { "goal": "C. Ronaldo", "assist": "Varun Kubal", "count": 3 },
+      { "goal": "C. Ronaldo", "assist": "Varun Kubal", "count": 1 },
+      { "goal": "C. Ronaldo", "assist": "Varun Kubal", "count": 2 }
+    ],
+    "endScore": {
+      "club1": "5",
+      "club2": "1"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Ethan Carter",
+    "achievement": "Man of the Match",
+    "tournament": "World Club Challenge",
+    "goals": 14,
+    "assists": 12,
+    "matches_played": 2
+  },
+  {
+    "name": "Liam Hernandez",
+    "achievement": "Man of the Match",
+    "tournament": "National Super League",
+    "goals": 12,
+    "assists": 8,
+    "matches_played": 2
+  },
+  {
+    "name": "Oliver Dawson",
+    "achievement": "Man of the Match",
+    "tournament": "M.U.F.C Tournament",
+    "goals": 10,
+    "assists": 6,
+    "matches_played": 2
+  },
+  {
+    "name": "Jordan Sinclair",
+    "achievement": "Man of the Match",
+    "tournament": "World Club Challenge",
+    "goals": 9,
+    "assists": 7,
+    "matches_played": 2
+  },
+  {
+    "name": "Ethan Carter ",
+    "achievement": "Man of the Match",
+    "tournament": "National Super League",
+    "goals": 14,
+    "assists": 3,
+    "matches_played": 2
+  }
+]

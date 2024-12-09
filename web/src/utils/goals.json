@@ -1,0 +1,28 @@
+{
+  "goals": {
+    "team1": [
+      {
+        "player": "Neymar Jr",
+        "assist": "Shreyas"
+      },
+      {
+        "player": "Varun Kubal",
+        "assist": "Shreyas"
+      },
+      {
+        "player": "Varun Kubal",
+        "assist": "Shreyas"
+      },
+      {
+        "player": "Varun Kubal",
+        "assist": "Shreyas"
+      }
+    ],
+    "team2": [
+      {
+        "player": "Varun Kubal",
+        "assist": "Shreyas"
+      }
+    ]
+  }
+}

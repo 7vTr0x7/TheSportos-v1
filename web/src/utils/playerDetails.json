@@ -1,0 +1,85 @@
+{
+  "playerProfile": {
+    "name": "Victor Lindelof",
+    "position": "Defender",
+    "email": "victorlindelof@gmail.com",
+    "playerInformation": {
+      "dateOfBirth": "12 October 2001",
+      "preferredFoot": "Right",
+      "location": "Thane",
+      "preferredPosition": "CDM, LW, CMF"
+    },
+    "teamsPlayedFor": [
+      {
+        "teamName": "MU F.C.",
+        "startDate": "03 Nov, 2008",
+        "stats": {
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0
+        }
+      },
+      {
+        "teamName": "Brothers FC",
+        "startDate": "15 Nov, 2009",
+        "stats": {
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0
+        }
+      },
+      {
+        "teamName": "Manchester United",
+        "startDate": "12 Nov, 2010",
+        "stats": {
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0
+        }
+      },
+      {
+        "teamName": "Nurnberg",
+        "startDate": "16 Nov, 2011",
+        "stats": {
+          "played": 2,
+          "won": 1,
+          "drawn": 1,
+          "lost": 0
+        }
+      }
+    ],
+    "recentFixtures": [
+      {
+        "tournament": "M.U.F.C Tournament: Group Stage",
+        "date": null,
+        "teams": ["Theosparatos", "Man City"],
+        "score": "5 - 1",
+        "result": "win"
+      },
+      {
+        "tournament": "M.U.F.C Tournament: Group Stage",
+        "date": null,
+        "teams": ["Man United", "Theosparatos"],
+        "score": "5 - 1",
+        "result": "win"
+      },
+      {
+        "tournament": "M.U.F.C Tournament: Group Stage",
+        "date": null,
+        "teams": ["Man City", "Theosparatos"],
+        "score": "5 - 1",
+        "result": "win"
+      },
+      {
+        "tournament": "M.U.F.C Tournament: Group Stage",
+        "date": null,
+        "teams": ["Theosparatos", "Arsenal"],
+        "score": "5 - 1",
+        "result": "win"
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "trophies": [
+    {
+      "name": "Champions League",
+      "image_url": "https://images.pexels.com/photos/7005501/pexels-photo-7005501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Premier League",
+      "image_url": "https://images.pexels.com/photos/7005501/pexels-photo-7005501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Indian Premier League",
+      "image_url": "https://images.pexels.com/photos/7005501/pexels-photo-7005501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Serie A",
+      "image_url": "https://images.pexels.com/photos/7005501/pexels-photo-7005501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Bundesliga",
+      "image_url": "https://images.pexels.com/photos/7005501/pexels-photo-7005501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "La Liga",
+      "image_url": "https://images.pexels.com/photos/7005501/pexels-photo-7005501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "FA Cup",
+      "image_url": "https://images.pexels.com/photos/7005501/pexels-photo-7005501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Copa del Rey",
+      "image_url": "https://images.pexels.com/photos/7005501/pexels-photo-7005501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "UEFA Super Cup",
+      "image_url": "https://images.pexels.com/photos/7005501/pexels-photo-7005501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Europa League",
+      "image_url": "https://images.pexels.com/photos/7005501/pexels-photo-7005501.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    }
+  ]
+}

@@ -1,0 +1,872 @@
+[
+  {
+    "name": "Goalkeeper",
+    "players": [
+      {
+        "name": "Altay Bayindir",
+        "number": 1,
+        "country": "Turkey",
+        "email": "abayindir@example.com",
+        "position": "Goalkeeper",
+        "playerProfile": {
+          "dateOfBirth": "14 March 1998",
+          "preferredFoot": "Right",
+          "location": "Istanbul",
+          "preferredPosition": "GK"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Fenerbahçe",
+            "startDate": "01 July, 2019",
+            "stats": {
+              "played": 100,
+              "won": 55,
+              "drawn": 20,
+              "lost": 25
+            }
+          },
+          {
+            "teamName": "Manchester United",
+            "startDate": "15 August, 2023",
+            "stats": {
+              "played": 15,
+              "won": 9,
+              "drawn": 3,
+              "lost": 3
+            }
+          }
+        ]
+      },
+      {
+        "name": "Gianluigi Donnarumma",
+        "number": 21,
+        "country": "Italy",
+        "email": "gdonnarumma@example.com",
+        "position": "Goalkeeper",
+        "playerProfile": {
+          "dateOfBirth": "25 February 1999",
+          "preferredFoot": "Left",
+          "location": "Naples",
+          "preferredPosition": "GK"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "AC Milan",
+            "startDate": "01 July, 2015",
+            "stats": {
+              "played": 150,
+              "won": 80,
+              "drawn": 30,
+              "lost": 40
+            }
+          },
+          {
+            "teamName": "Paris Saint-Germain",
+            "startDate": "01 July, 2021",
+            "stats": {
+              "played": 45,
+              "won": 30,
+              "drawn": 10,
+              "lost": 5
+            }
+          }
+        ]
+      },
+      {
+        "name": "Jan Oblak",
+        "number": 13,
+        "country": "Slovenia",
+        "email": "joblak@example.com",
+        "position": "Goalkeeper",
+        "playerProfile": {
+          "dateOfBirth": "07 January 1993",
+          "preferredFoot": "Right",
+          "location": "Škofja Loka",
+          "preferredPosition": "GK"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Benfica",
+            "startDate": "01 July, 2012",
+            "stats": {
+              "played": 29,
+              "won": 19,
+              "drawn": 6,
+              "lost": 4
+            }
+          },
+          {
+            "teamName": "Atletico Madrid",
+            "startDate": "16 July, 2014",
+            "stats": {
+              "played": 300,
+              "won": 180,
+              "drawn": 50,
+              "lost": 70
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Defender",
+    "players": [
+      {
+        "name": "Victor Lindelof",
+        "number": 2,
+        "country": "Sweden",
+        "email": "vlindelof@example.com",
+        "position": "Defender",
+        "playerProfile": {
+          "dateOfBirth": "17 July 1994",
+          "preferredFoot": "Right",
+          "location": "Västerås",
+          "preferredPosition": "CB"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Benfica",
+            "startDate": "01 July, 2013",
+            "stats": {
+              "played": 48,
+              "won": 30,
+              "drawn": 10,
+              "lost": 8
+            }
+          },
+          {
+            "teamName": "Manchester United",
+            "startDate": "10 July, 2017",
+            "stats": {
+              "played": 220,
+              "won": 120,
+              "drawn": 50,
+              "lost": 50
+            }
+          }
+        ]
+      },
+      {
+        "name": "Trent Alexander-Arnold",
+        "number": 66,
+        "country": "England",
+        "email": "talexanderarnold@example.com",
+        "position": "Defender",
+        "playerProfile": {
+          "dateOfBirth": "07 October 1998",
+          "preferredFoot": "Right",
+          "location": "Liverpool",
+          "preferredPosition": "RB"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Liverpool",
+            "startDate": "01 July, 2016",
+            "stats": {
+              "played": 210,
+              "won": 130,
+              "drawn": 40,
+              "lost": 40
+            }
+          }
+        ]
+      },
+      {
+        "name": "Antonio Rudiger",
+        "number": 2,
+        "country": "Germany",
+        "email": "arudiger@example.com",
+        "position": "Defender",
+        "playerProfile": {
+          "dateOfBirth": "03 March 1993",
+          "preferredFoot": "Right",
+          "location": "Berlin",
+          "preferredPosition": "CB"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "VfB Stuttgart",
+            "startDate": "01 July, 2011",
+            "stats": {
+              "played": 66,
+              "won": 22,
+              "drawn": 19,
+              "lost": 25
+            }
+          },
+          {
+            "teamName": "AS Roma",
+            "startDate": "01 July, 2015",
+            "stats": {
+              "played": 72,
+              "won": 36,
+              "drawn": 20,
+              "lost": 16
+            }
+          },
+          {
+            "teamName": "Chelsea",
+            "startDate": "01 July, 2017",
+            "stats": {
+              "played": 89,
+              "won": 50,
+              "drawn": 20,
+              "lost": 19
+            }
+          },
+          {
+            "teamName": "Real Madrid",
+            "startDate": "01 July, 2022",
+            "stats": {
+              "played": 40,
+              "won": 30,
+              "drawn": 5,
+              "lost": 5
+            }
+          }
+        ]
+      },
+      {
+        "name": "Raphaël Varane",
+        "number": 19,
+        "country": "France",
+        "email": "rvarane@example.com",
+        "position": "Defender",
+        "playerProfile": {
+          "dateOfBirth": "25 April 1993",
+          "preferredFoot": "Right",
+          "location": "Lille",
+          "preferredPosition": "CB"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Lille OSC",
+            "startDate": "01 July, 2010",
+            "stats": {
+              "played": 25,
+              "won": 12,
+              "drawn": 8,
+              "lost": 5
+            }
+          },
+          {
+            "teamName": "Real Madrid",
+            "startDate": "01 July, 2011",
+            "stats": {
+              "played": 230,
+              "won": 130,
+              "drawn": 60,
+              "lost": 40
+            }
+          },
+          {
+            "teamName": "Manchester United",
+            "startDate": "02 October, 2020",
+            "stats": {
+              "played": 60,
+              "won": 30,
+              "drawn": 15,
+              "lost": 15
+            }
+          }
+        ]
+      },
+      {
+        "name": "Noussair Mazraoui",
+        "number": 6,
+        "country": "Morocco",
+        "email": "nmazraoui@example.com",
+        "position": "Defender",
+        "playerProfile": {
+          "dateOfBirth": "14 November 1997",
+          "preferredFoot": "Right",
+          "location": "Lalden",
+          "preferredPosition": "RB"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Ajax",
+            "startDate": "01 July, 2018",
+            "stats": {
+              "played": 94,
+              "won": 60,
+              "drawn": 20,
+              "lost": 14
+            }
+          },
+          {
+            "teamName": "Manchester United",
+            "startDate": "15 July, 2023",
+            "stats": {
+              "played": 8,
+              "won": 5,
+              "drawn": 2,
+              "lost": 1
+            }
+          }
+        ]
+      },
+      {
+        "name": "Andrew Robertson",
+        "number": 26,
+        "country": "Scotland",
+        "email": "arobertson@example.com",
+        "position": "Defender",
+        "playerProfile": {
+          "dateOfBirth": "11 March 1994",
+          "preferredFoot": "Left",
+          "location": "Glasgow",
+          "preferredPosition": "LB"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Hull City",
+            "startDate": "01 July, 2014",
+            "stats": {
+              "played": 90,
+              "won": 30,
+              "drawn": 25,
+              "lost": 35
+            }
+          },
+          {
+            "teamName": "Liverpool",
+            "startDate": "01 July, 2017",
+            "stats": {
+              "played": 150,
+              "won": 100,
+              "drawn": 30,
+              "lost": 20
+            }
+          }
+        ]
+      },
+      {
+        "name": "Ben White",
+        "number": 4,
+        "country": "England",
+        "email": "bwhite@example.com",
+        "position": "Defender",
+        "playerProfile": {
+          "dateOfBirth": "08 October 1997",
+          "preferredFoot": "Right",
+          "location": "Poole",
+          "preferredPosition": "CB"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Brighton & Hove Albion",
+            "startDate": "01 July, 2016",
+            "stats": {
+              "played": 50,
+              "won": 25,
+              "drawn": 15,
+              "lost": 10
+            }
+          },
+          {
+            "teamName": "Arsenal",
+            "startDate": "01 July, 2021",
+            "stats": {
+              "played": 60,
+              "won": 35,
+              "drawn": 10,
+              "lost": 15
+            }
+          }
+        ]
+      },
+      {
+        "name": "José Giménez",
+        "number": 24,
+        "country": "Uruguay",
+        "email": "jgimenez@example.com",
+        "position": "Defender",
+        "playerProfile": {
+          "dateOfBirth": "20 January 1995",
+          "preferredFoot": "Right",
+          "location": "Toledo",
+          "preferredPosition": "CB"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Celta Vigo",
+            "startDate": "01 July, 2013",
+            "stats": {
+              "played": 48,
+              "won": 20,
+              "drawn": 15,
+              "lost": 13
+            }
+          },
+          {
+            "teamName": "Atletico Madrid",
+            "startDate": "01 July, 2015",
+            "stats": {
+              "played": 130,
+              "won": 80,
+              "drawn": 30,
+              "lost": 20
+            }
+          }
+        ]
+      },
+      {
+        "name": "Marcelo",
+        "number": 12,
+        "country": "Brazil",
+        "email": "marcelo@example.com",
+        "position": "Defender",
+        "playerProfile": {
+          "dateOfBirth": "12 May 1988",
+          "preferredFoot": "Left",
+          "location": "Rio de Janeiro",
+          "preferredPosition": "LB"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Real Madrid",
+            "startDate": "01 July, 2007",
+            "stats": {
+              "played": 350,
+              "won": 230,
+              "drawn": 50,
+              "lost": 70
+            }
+          },
+          {
+            "teamName": "Fluminense",
+            "startDate": "01 July, 2022",
+            "stats": {
+              "played": 30,
+              "won": 20,
+              "drawn": 5,
+              "lost": 5
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Midfielder",
+    "players": [
+      {
+        "name": "Bruno Fernandes",
+        "number": 18,
+        "country": "Portugal",
+        "email": "bfernandes@example.com",
+        "position": "Midfielder",
+        "playerProfile": {
+          "dateOfBirth": "08 September 1994",
+          "preferredFoot": "Right",
+          "location": "Aveiro",
+          "preferredPosition": "CAM"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Sporting CP",
+            "startDate": "01 July, 2017",
+            "stats": {
+              "played": 80,
+              "won": 50,
+              "drawn": 20,
+              "lost": 10
+            }
+          },
+          {
+            "teamName": "Manchester United",
+            "startDate": "01 January, 2020",
+            "stats": {
+              "played": 100,
+              "won": 60,
+              "drawn": 20,
+              "lost": 20
+            }
+          }
+        ]
+      },
+      {
+        "name": "Kevin De Bruyne",
+        "number": 17,
+        "country": "Belgium",
+        "email": "kdebruyne@example.com",
+        "position": "Midfielder",
+        "playerProfile": {
+          "dateOfBirth": "28 June 1991",
+          "preferredFoot": "Right",
+          "location": "Drongen",
+          "preferredPosition": "CM"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Chelsea",
+            "startDate": "01 January, 2012",
+            "stats": {
+              "played": 9,
+              "won": 2,
+              "drawn": 4,
+              "lost": 3
+            }
+          },
+          {
+            "teamName": "Werder Bremen",
+            "startDate": "01 July, 2012",
+            "stats": {
+              "played": 34,
+              "won": 15,
+              "drawn": 8,
+              "lost": 11
+            }
+          },
+          {
+            "teamName": "Manchester City",
+            "startDate": "30 August, 2015",
+            "stats": {
+              "played": 150,
+              "won": 100,
+              "drawn": 30,
+              "lost": 20
+            }
+          }
+        ]
+      },
+      {
+        "name": "N'Golo Kanté",
+        "number": 7,
+        "country": "France",
+        "email": "nkante@example.com",
+        "position": "Midfielder",
+        "playerProfile": {
+          "dateOfBirth": "29 March 1991",
+          "preferredFoot": "Right",
+          "location": "Paris",
+          "preferredPosition": "CM"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Caen",
+            "startDate": "01 July, 2013",
+            "stats": {
+              "played": 36,
+              "won": 10,
+              "drawn": 10,
+              "lost": 16
+            }
+          },
+          {
+            "teamName": "Leicester City",
+            "startDate": "01 July, 2015",
+            "stats": {
+              "played": 75,
+              "won": 45,
+              "drawn": 15,
+              "lost": 15
+            }
+          },
+          {
+            "teamName": "Chelsea",
+            "startDate": "16 July, 2016",
+            "stats": {
+              "played": 100,
+              "won": 60,
+              "drawn": 20,
+              "lost": 20
+            }
+          }
+        ]
+      },
+      {
+        "name": "Paul Pogba",
+        "number": 6,
+        "country": "France",
+        "email": "ppogba@example.com",
+        "position": "Midfielder",
+        "playerProfile": {
+          "dateOfBirth": "15 March 1993",
+          "preferredFoot": "Right",
+          "location": "LagnysurMarne",
+          "preferredPosition": "CM"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Juventus",
+            "startDate": "01 July, 2012",
+            "stats": {
+              "played": 89,
+              "won": 50,
+              "drawn": 20,
+              "lost": 19
+            }
+          },
+          {
+            "teamName": "Manchester United",
+            "startDate": "01 August, 2016",
+            "stats": {
+              "played": 190,
+              "won": 80,
+              "drawn": 40,
+              "lost": 70
+            }
+          }
+        ]
+      },
+      {
+        "name": "Frenkie de Jong",
+        "number": 21,
+        "country": "Netherlands",
+        "email": "fdejong@example.com",
+        "position": "Midfielder",
+        "playerProfile": {
+          "dateOfBirth": "12 May 1997",
+          "preferredFoot": "Left",
+          "location": "Amsterdam",
+          "preferredPosition": "CM"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Ajax",
+            "startDate": "01 July, 2016",
+            "stats": {
+              "played": 90,
+              "won": 60,
+              "drawn": 20,
+              "lost": 10
+            }
+          },
+          {
+            "teamName": "Barcelona",
+            "startDate": "01 July, 2019",
+            "stats": {
+              "played": 50,
+              "won": 35,
+              "drawn": 10,
+              "lost": 5
+            }
+          }
+        ]
+      },
+      {
+        "name": "Luka Modric",
+        "number": 10,
+        "country": "Croatia",
+        "email": "lmodric@example.com",
+        "position": "Midfielder",
+        "playerProfile": {
+          "dateOfBirth": "09 September 1985",
+          "preferredFoot": "Right",
+          "location": "Zadar",
+          "preferredPosition": "CM"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Dinamo Zagreb",
+            "startDate": "01 July, 2003",
+            "stats": {
+              "played": 35,
+              "won": 25,
+              "drawn": 5,
+              "lost": 5
+            }
+          },
+          {
+            "teamName": "Tottenham Hotspur",
+            "startDate": "01 July, 2008",
+            "stats": {
+              "played": 150,
+              "won": 80,
+              "drawn": 40,
+              "lost": 30
+            }
+          },
+          {
+            "teamName": "Real Madrid",
+            "startDate": "01 July, 2012",
+            "stats": {
+              "played": 300,
+              "won": 200,
+              "drawn": 50,
+              "lost": 50
+            }
+          }
+        ]
+      },
+      {
+        "name": "Christian Eriksen",
+        "number": 8,
+        "country": "Denmark",
+        "email": "ceriksen@example.com",
+        "position": "Midfielder",
+        "playerProfile": {
+          "dateOfBirth": "14 February 1992",
+          "preferredFoot": "Right",
+          "location": "Middelfart",
+          "preferredPosition": "CAM"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Ajax",
+            "startDate": "01 July, 2010",
+            "stats": {
+              "played": 60,
+              "won": 30,
+              "drawn": 20,
+              "lost": 10
+            }
+          },
+          {
+            "teamName": "Tottenham Hotspur",
+            "startDate": "01 July, 2013",
+            "stats": {
+              "played": 150,
+              "won": 90,
+              "drawn": 30,
+              "lost": 30
+            }
+          },
+          {
+            "teamName": "Inter Milan",
+            "startDate": "01 January, 2020",
+            "stats": {
+              "played": 35,
+              "won": 25,
+              "drawn": 5,
+              "lost": 5
+            }
+          },
+          {
+            "teamName": "Manchester United",
+            "startDate": "01 August, 2021",
+            "stats": {
+              "played": 20,
+              "won": 10,
+              "drawn": 5,
+              "lost": 5
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Forward",
+    "players": [
+      {
+        "name": "Kylian Mbappé",
+        "number": 7,
+        "country": "France",
+        "email": "kmbappe@example.com",
+        "position": "Forward",
+        "playerProfile": {
+          "dateOfBirth": "20 December 1998",
+          "preferredFoot": "Right",
+          "location": "Bondy",
+          "preferredPosition": "LW"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "AS Monaco",
+            "startDate": "01 July, 2015",
+            "stats": {
+              "played": 50,
+              "won": 30,
+              "drawn": 10,
+              "lost": 10
+            }
+          },
+          {
+            "teamName": "Paris Saint-Germain",
+            "startDate": "31 August, 2017",
+            "stats": {
+              "played": 150,
+              "won": 110,
+              "drawn": 25,
+              "lost": 15
+            }
+          }
+        ]
+      },
+      {
+        "name": "Robert Lewandowski",
+        "number": 9,
+        "country": "Poland",
+        "email": "rlewandowski@example.com",
+        "position": "Forward",
+        "playerProfile": {
+          "dateOfBirth": "21 August 1988",
+          "preferredFoot": "Right",
+          "location": "Warsaw",
+          "preferredPosition": "CF"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "Borussia Dortmund",
+            "startDate": "01 July, 2010",
+            "stats": {
+              "played": 100,
+              "won": 60,
+              "drawn": 20,
+              "lost": 20
+            }
+          },
+          {
+            "teamName": "Bayern Munich",
+            "startDate": "01 July, 2014",
+            "stats": {
+              "played": 200,
+              "won": 150,
+              "drawn": 30,
+              "lost": 20
+            }
+          },
+          {
+            "teamName": "FC Barcelona",
+            "startDate": "16 July, 2022",
+            "stats": {
+              "played": 30,
+              "won": 25,
+              "drawn": 3,
+              "lost": 2
+            }
+          }
+        ]
+      },
+      {
+        "name": "Lionel Messi",
+        "number": 10,
+        "country": "Argentina",
+        "email": "lmessi@example.com",
+        "position": "Forward",
+        "playerProfile": {
+          "dateOfBirth": "24 June 1987",
+          "preferredFoot": "Left",
+          "location": "Rosario",
+          "preferredPosition": "RW"
+        },
+        "teamsPlayedFor": [
+          {
+            "teamName": "FC Barcelona",
+            "startDate": "01 July, 2003",
+            "stats": {
+              "played": 778,
+              "won": 600,
+              "drawn": 80,
+              "lost": 98
+            }
+          },
+          {
+            "teamName": "Paris Saint-Germain",
+            "startDate": "10 August, 2021",
+            "stats": {
+              "played": 53,
+              "won": 35,
+              "drawn": 12,
+              "lost": 6
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

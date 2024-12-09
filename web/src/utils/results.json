@@ -1,0 +1,121 @@
+{
+  "leagues": [
+    {
+      "name": "Europa League",
+      "months": [
+        {
+          "id": "1",
+          "month": "September",
+          "matches": [
+            {
+              "id": "1",
+              "date": "Sat 28 Sep 2024",
+              "location": "St. James' Park, Newcastle",
+              "team1": "Thesprotos",
+              "team1_score": 5,
+              "team2": "Man City",
+              "team2_score": 1,
+              "penalty": "3-4",
+              "status": "live"
+            },
+            {
+              "id": "2",
+              "date": "Sat 28 Sep 2024",
+              "location": "St. James' Park, Newcastle",
+              "team1": "Arsenal",
+              "team1_score": 1,
+              "team2": "Atletico",
+              "team2_score": 5,
+              "status": "complete"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "month": "August",
+          "matches": [
+            {
+              "id": "5",
+              "date": "Sat 28 Aug 2024",
+              "location": "St. James' Park, Newcastle",
+              "team1": "Arsenal",
+              "team1_score": 2,
+              "team2": "Atletico",
+              "team2_score": 3,
+              "status": "complete"
+            },
+            {
+              "id": "6",
+              "date": "Sat 21 Aug 2024",
+              "location": "St. James' Park, Newcastle",
+              "team1": "Arsenal",
+              "team1_score": 3,
+              "team2": "Atletico",
+              "team2_score": 2,
+              "penalty": "3-4",
+              "status": "complete"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Champions League",
+      "months": [
+        {
+          "id": "3",
+          "month": "October",
+          "matches": [
+            {
+              "id": "9",
+              "date": "Wed 2 Oct 2024",
+              "location": "Allianz Arena, Munich",
+              "team1": "Bayern Munich",
+              "team1_score": 4,
+              "team2": "Manchester United",
+              "team2_score": 1,
+              "status": "complete"
+            },
+            {
+              "id": "10",
+              "date": "Wed 2 Oct 2024",
+              "location": "Allianz Arena, Munich",
+              "team1": "Real Madrid",
+              "team1_score": 2,
+              "team2": "Paris Saint-Germain",
+              "team2_score": 2,
+              "penalty": "4-3",
+              "status": "complete"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "month": "September",
+          "matches": [
+            {
+              "id": "13",
+              "date": "Wed 20 Sep 2024",
+              "location": "Old Trafford, Manchester",
+              "team1": "Manchester United",
+              "team1_score": 2,
+              "team2": "Paris Saint-Germain",
+              "team2_score": 2,
+              "status": "complete"
+            },
+            {
+              "id": "14",
+              "date": "Tue 10 Sep 2024",
+              "location": "Bernabeu, Madrid",
+              "team1": "Real Madrid",
+              "team1_score": 1,
+              "team2": "Bayern Munich",
+              "team2_score": 2,
+              "status": "complete"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

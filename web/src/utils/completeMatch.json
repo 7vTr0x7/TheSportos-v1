@@ -1,0 +1,53 @@
+{
+  "_id": "2",
+  "status": "Completed",
+  "live": false,
+  "time": "90m",
+  "stadium": "Old Trafford",
+  "matchType": "Practice Match",
+  "home": {
+    "name": "Man United",
+    "imageUrl": "https://i.imgur.com/J6o9XHo.png"
+  },
+  "away": {
+    "name": "Man City",
+    "imageUrl": "https://i.imgur.com/J6o9XHo.png"
+  },
+  "team1": {
+    "name": "Thesprotos",
+    "logo_url": "https://i.imgur.com/7FUqFZ4.png"
+  },
+  "team2": {
+    "name": "Man City",
+    "logo_url": "https://i.imgur.com/J6o9XHo.png"
+  },
+  "score": { "team1": 5, "team2": 1 },
+  "FT": true,
+  "teamScore": {
+    "goals": {
+      "home": [
+        {
+          "player": "C. Ronaldo",
+          "assist": "Varun Kubal",
+          "count": 3
+        },
+        {
+          "player": "C. Ronaldo",
+          "assist": "Varun Kubal",
+          "count": 2
+        }
+      ],
+      "away": [
+        {
+          "player": "E. Halaand",
+          "assist": "K. de Bruyne",
+          "count": 1
+        }
+      ]
+    },
+    "finalScore": {
+      "home": 5,
+      "away": 1
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "latest_news": [
+    {
+      "_id": "1",
+      "category": "Transfers",
+      "date": "18 Oct 2024",
+      "title": "Real Madrid in advanced talks with top European midfielder",
+      "description": "Real Madrid aims to strengthen their midfield with a high-profile signing.",
+      "image_url": "https://images.pexels.com/photos/28355084/pexels-photo-28355084/free-photo-of-two-soccer-players-are-playing-on-the-field.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "by": "James Thompson"
+    },
+    {
+      "_id": "2",
+      "category": "Injuries",
+      "date": "17 Oct 2024",
+      "title": "Manchester United loses key player due to injury",
+      "description": "A major injury blow for Manchester United as a top player is sidelined.",
+      "image_url": "https://images.pexels.com/photos/28355084/pexels-photo-28355084/free-photo-of-two-soccer-players-are-playing-on-the-field.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "by": "Sophia Martinez"
+    },
+    {
+      "_id": "3",
+      "category": "Tactics",
+      "date": "16 Oct 2024",
+      "title": "Tottenham’s new formation proves effective in big win",
+      "description": "Tottenham's tactical change has led to impressive victories this season.",
+      "image_url": "https://images.pexels.com/photos/28355084/pexels-photo-28355084/free-photo-of-two-soccer-players-are-playing-on-the-field.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "by": "Liam O'Connor"
+    },
+    {
+      "_id": "4",
+      "category": "Clubs",
+      "date": "15 Oct 2024",
+      "title": "Bayern Munich aims for Champions League success with new lineup",
+      "description": "The German champions have made strategic changes to target European success.",
+      "image_url": "https://images.pexels.com/photos/28355084/pexels-photo-28355084/free-photo-of-two-soccer-players-are-playing-on-the-field.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "by": "Emily Chen"
+    },
+    {
+      "_id": "5",
+      "category": "Results",
+      "date": "14 Oct 2024",
+      "title": "Barcelona secures crucial victory in league title race",
+      "description": "Barcelona’s recent win boosts their position in the league standings.",
+      "image_url": "https://images.pexels.com/photos/28355084/pexels-photo-28355084/free-photo-of-two-soccer-players-are-playing-on-the-field.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "by": "Alexander Reed"
+    },
+    {
+      "_id": "6",
+      "category": "Results",
+      "date": "13 Oct 2024",
+      "title": "PSG extends unbeaten streak with a commanding performance",
+      "description": "Paris Saint-Germain remains unbeaten after another dominant display.",
+      "image_url": "https://images.pexels.com/photos/28355084/pexels-photo-28355084/free-photo-of-two-soccer-players-are-playing-on-the-field.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "by": "Grace Patel"
+    },
+    {
+      "_id": "7",
+      "category": "Results",
+      "date": "9 Oct 2024",
+      "title": "PSG extends unbeaten streak with a commanding performance",
+      "description": "Paris Saint-Germain remains unbeaten after another dominant display.",
+      "image_url": "https://images.pexels.com/photos/28355084/pexels-photo-28355084/free-photo-of-two-soccer-players-are-playing-on-the-field.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "by": "Daniel Kim"
+    },
+    {
+      "_id": "8",
+      "category": "Results",
+      "date": "10 Oct 2024",
+      "title": "PSG extends unbeaten streak with a commanding performance",
+      "description": "Paris Saint-Germain remains unbeaten after another dominant display.",
+      "image_url": "https://images.pexels.com/photos/28355084/pexels-photo-28355084/free-photo-of-two-soccer-players-are-playing-on-the-field.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "by": "Isabella Russo"
+    },
+    {
+      "_id": "9",
+      "category": "Results",
+      "date": "12 Oct 2024",
+      "title": "PSG extends unbeaten streak with a commanding performance",
+      "description": "Paris Saint-Germain remains unbeaten after another dominant display.",
+      "image_url": "https://images.pexels.com/photos/28355084/pexels-photo-28355084/free-photo-of-two-soccer-players-are-playing-on-the-field.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "by": "Oliver Hayes"
+    },
+    {
+      "_id": "10",
+      "category": "Results",
+      "date": "11 Oct 2024",
+      "title": "PSG extends unbeaten streak with a commanding performance",
+      "description": "Paris Saint-Germain remains unbeaten after another dominant display.",
+      "image_url": "https://images.pexels.com/photos/28355084/pexels-photo-28355084/free-photo-of-two-soccer-players-are-playing-on-the-field.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "by": "Mia Perez"
+    }
+  ]
+}

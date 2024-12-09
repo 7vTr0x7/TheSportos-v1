@@ -1,0 +1,60 @@
+{
+  "leagues": [
+    {
+      "league": "EFL League",
+      "logo": "Sky Bet EFL",
+      "arrow": "right",
+      "start_date": "12 Aug, 2023",
+      "end_date": "12 May, 2024",
+      "views": 1500000
+    },
+    {
+      "league": "Premier League",
+      "logo": "Premier League",
+      "arrow": "right",
+      "start_date": "11 Aug, 2023",
+      "end_date": "11 May, 2024",
+      "views": 5000000
+    },
+    {
+      "league": "UEFA Champions League",
+      "logo": "UEFA Champions League",
+      "arrow": "right",
+      "start_date": "06 Sep, 2023",
+      "end_date": "30 May, 2024",
+      "views": 3000000
+    },
+    {
+      "league": "Premier League",
+      "logo": "Premier League",
+      "arrow": "right",
+      "start_date": "11 Aug, 2023",
+      "end_date": "11 May, 2024",
+      "views": 5000000
+    },
+    {
+      "league": "Premier League",
+      "logo": "Premier League",
+      "arrow": "right",
+      "start_date": "11 Aug, 2023",
+      "end_date": "11 May, 2024",
+      "views": 5000000
+    },
+    {
+      "league": "UEFA Champions League",
+      "logo": "UEFA Champions League",
+      "arrow": "right",
+      "start_date": "06 Sep, 2023",
+      "end_date": "30 May, 2024",
+      "views": 3000000
+    },
+    {
+      "league": "EFL League",
+      "logo": "Sky Bet EFL",
+      "arrow": "right",
+      "start_date": "12 Aug, 2023",
+      "end_date": "12 May, 2024",
+      "views": 1500000
+    }
+  ]
+}

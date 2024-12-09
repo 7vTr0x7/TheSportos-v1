@@ -1,0 +1,41 @@
+{
+  "name": "Kylian Mbappé",
+  "number": 7,
+  "country": "France",
+  "email": "kmbappe@example.com",
+  "position": "Forward",
+  "imageUrl": "https://ichef.bbci.co.uk/ace/standard/976/cpsprodpb/4a24/live/d900ec90-4f27-11ef-9e75-ad2a41d12bcb.jpg.webp",
+  "stats": {
+    "goals": 12,
+    "assists": 11,
+    "rank": "1st"
+  },
+  "playerProfile": {
+    "dateOfBirth": "20 December 1998",
+    "preferredFoot": "Right",
+    "location": "Bondy",
+    "preferredPosition": "LW"
+  },
+  "teamsPlayedFor": [
+    {
+      "teamName": "AS Monaco",
+      "startDate": "01 July, 2015",
+      "stats": {
+        "played": 50,
+        "won": 30,
+        "drawn": 10,
+        "lost": 10
+      }
+    },
+    {
+      "teamName": "Paris Saint-Germain",
+      "startDate": "31 August, 2017",
+      "stats": {
+        "played": 150,
+        "won": 110,
+        "drawn": 25,
+        "lost": 15
+      }
+    }
+  ]
+}
