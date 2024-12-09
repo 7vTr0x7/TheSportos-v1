@@ -73,20 +73,25 @@ const App = () => {
       console.error("Data fetching failed", error.message);
     }
   }, [dispatch, apiUrl]);
- useEffect(() => {
-   refreshData();
 
-   const socket = io(apiUrl);
+  useEffect(() => {
+    refreshData();
 
-   socket.on("dataUpdated", () => {
-     console.log("Data updated, refreshing...");
-     refreshData(); // Fetch latest data
-   });
+    const socket = io(apiUrl, { transports: ["websocket"] });
 
-   return () => {
-     socket.disconnect();
-   };
- }, [refreshData, apiUrl]);
+    socket.on("dataUpdated", () => {
+      console.log("Data updated, refreshing...");
+      refreshData(); // Fetch latest data
+    });
+
+    socket.on("connect_error", (error) => {
+      console.error("Socket connection failed:", error.message);
+    });
+
+    return () => {
+      socket.disconnect();
+    };
+  }, [refreshData, apiUrl]);
 
   return (
     <div>

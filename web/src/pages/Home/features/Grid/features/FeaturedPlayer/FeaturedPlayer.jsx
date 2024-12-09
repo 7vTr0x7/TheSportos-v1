@@ -32,12 +32,13 @@ const FeaturedPlayer = () => {
     // Initial banner fetch
     getFeaturedPlayer(apiUrl);
     // Initialize WebSocket connection
-    const socket = io(apiUrl);
 
-    // Listen for data updates
+    const socket = io(apiUrl, { transports: ["websocket"] });
+
     socket.on("dataUpdated", () => {
-      console.log("Banner data updated, refreshing...");
+      console.log("Data updated, refreshing...");
       getFeaturedPlayer(apiUrl);
+      apiUrl; // Fetch latest data
     });
 
     // Clean up the WebSocket connection on component unmount

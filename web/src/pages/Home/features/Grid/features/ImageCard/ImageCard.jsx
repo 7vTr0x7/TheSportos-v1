@@ -32,16 +32,17 @@ const ImageCard = () => {
     // Initial banner fetch
     getBannerData();
 
-    // Initialize WebSocket connection
-    const socket = io(apiUrl);
+    const socket = io(apiUrl, { transports: ["websocket"] });
 
-    // Listen for data updates
     socket.on("dataUpdated", () => {
-      console.log("Banner data updated, refreshing...");
-      getBannerData();
+      console.log("Data updated, refreshing...");
+      getBannerData(); // Fetch latest data
     });
 
-    // Clean up the WebSocket connection on component unmount
+    socket.on("connect_error", (error) => {
+      console.error("Socket connection failed:", error.message);
+    });
+
     return () => {
       socket.disconnect();
     };

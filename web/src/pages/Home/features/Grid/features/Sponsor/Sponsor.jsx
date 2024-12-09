@@ -37,14 +37,16 @@ const Sponsor = ({ text }) => {
     // Initial banner fetch
     getSponsorData(apiUrl);
     // Initialize WebSocket connection
-    const socket = io(apiUrl);
+    const socket = io(apiUrl, { transports: ["websocket"] });
 
-    // Listen for data updates
     socket.on("dataUpdated", () => {
-      console.log("Banner data updated, refreshing...");
-      getSponsorData(apiUrl);
+      console.log("Data updated, refreshing...");
+       getSponsorData(apiUrl);// Fetch latest data
     });
 
+    socket.on("connect_error", (error) => {
+      console.error("Socket connection failed:", error.message);
+    });
     // Clean up the WebSocket connection on component unmount
     return () => {
       socket.disconnect();

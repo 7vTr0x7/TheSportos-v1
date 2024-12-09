@@ -30,15 +30,13 @@ const Trophies = () => {
   useEffect(() => {
     // Initial banner fetch
     getTrophiesData(apiUrl);
-    // Initialize WebSocket connection
-    const socket = io(apiUrl);
+    const socket = io(apiUrl, { transports: ["websocket"] });
 
-    // Listen for data updates
     socket.on("dataUpdated", () => {
-      console.log("Banner data updated, refreshing...");
+      console.log("Data updated, refreshing...");
       getTrophiesData(apiUrl);
+      apiUrl; // Fetch latest data
     });
-
     // Clean up the WebSocket connection on component unmount
     return () => {
       socket.disconnect();
