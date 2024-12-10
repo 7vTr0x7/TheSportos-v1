@@ -1,59 +1,117 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { toast,Toaster } from "react-hot-toast";
 
 const UserForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const validate = () => {
+    const validationErrors = {};
+    if (!formData.name) validationErrors.name = "Name is required.";
+    if (!formData.email) validationErrors.email = "Email is required.";
+    if (!formData.phoneNumber)
+      validationErrors.phoneNumber = "Phone number is required.";
+    setErrors(validationErrors);
+    return Object.keys(validationErrors).length === 0;
+  };
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setErrors({ ...errors, [e.target.name]: "" }); // Clear individual field error on change
+  };
+
   const submitHandler = async (e) => {
     e.preventDefault();
+    if (!validate()) {
+      toast.error("Please fill out all required fields.");
+      return;
+    }
+
+    const toastId = toast.loading("Submitting...");
 
     try {
-      const res = await fetch("http://localhost:4000/api/admin/get/all/users", {
+      const res = await fetch("http://localhost:4000/api/user/contact-us", {
         method: "POST",
         credentials: "include",
-        headers:{
-          "Content-Type" : "application/json"
+        headers: {
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify({})
+        body: JSON.stringify(formData),
       });
 
-      if(!res.ok) {
-        console.log("failed to post data")
+      if (!res.ok) {
+        throw new Error("Failed to post data");
       }
 
-      const data = await res.json()
+      const data = await res.json();
+      toast.success("Form submitted successfully!");
+      console.log("Form submitted successfully:", data);
     } catch (error) {
-      console.log(error);
+      toast.error("Error submitting form. Please try again.");
+      console.error("Error submitting form:", error);
+    } finally {
+      toast.dismiss(toastId);
     }
   };
 
   return (
-    <div className="bg-[#151515]  md:rounded-l-lg rounded-t-lg px-6 py-6 sm:px-10 sm:py-8">
+    <div className="bg-[#151515] md:rounded-l-lg rounded-t-lg px-6 py-6 sm:px-10 sm:py-8">
       <p className="text-gray-50 font-semibold text-2xl sm:text-3xl">
         Get in <span className="text-yellow-400">Touch</span>
       </p>
-      <form className="mt-6 sm:mt-7 mb-8 text-white">
+      <form className="mt-6 sm:mt-7 mb-8 text-white" onSubmit={submitHandler}>
         <input
           type="text"
+          name="name"
+          value={formData.name}
+          onChange={handleChange}
           placeholder="Name*"
-          required
-          className="text-sm font-normal bg-transparent px-4 py-2 border w-full rounded-md border-gray-200 mt-2"
+          className={`text-sm font-normal bg-transparent px-4 py-2 border w-full rounded-md mt-2 ${
+            errors.name ? "border-red-500" : "border-gray-200"
+          }`}
         />
+        {errors.name && (
+          <p className="text-red-500 text-xs mt-1">{errors.name}</p>
+        )}
+
         <input
           type="email"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
           placeholder="Email*"
-          required
-          className="text-sm font-normal bg-transparent px-4 py-2 border w-full rounded-md border-gray-200 mt-3"
+          className={`text-sm font-normal bg-transparent px-4 py-2 border w-full rounded-md mt-3 ${
+            errors.email ? "border-red-500" : "border-gray-200"
+          }`}
         />
+        {errors.email && (
+          <p className="text-red-500 text-xs mt-1">{errors.email}</p>
+        )}
+
         <input
-          type="number"
+          type="text"
+          name="phoneNumber"
+          value={formData.phoneNumber}
+          onChange={handleChange}
           placeholder="Phone Number*"
-          required
-          className="text-sm font-normal bg-transparent px-4 py-2 border w-full rounded-md border-gray-200 mt-3"
+          className={`text-sm font-normal bg-transparent px-4 py-2 border w-full rounded-md mt-3 ${
+            errors.phoneNumber ? "border-red-500" : "border-gray-200"
+          }`}
         />
+        {errors.phoneNumber && (
+          <p className="text-red-500 text-xs mt-1">{errors.phoneNumber}</p>
+        )}
+
         <button
           type="submit"
-          className="bg-yellow-400 text-black w-full rounded-md mt-4 text-center py-2 text-xs font-semibold uppercase"
-          onClick={submitHandler}>
+          className="bg-yellow-400 text-black w-full rounded-md mt-4 text-center py-2 text-xs font-semibold uppercase">
           Send
         </button>
       </form>
@@ -74,6 +132,7 @@ const UserForm = () => {
           </div>
         </div>
       </div>
+      <Toaster />
     </div>
   );
 };

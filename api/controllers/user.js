@@ -244,6 +244,8 @@ export const addContactUs = async (req, res) => {
   try {
     const user = await User.create(req.body);
     if (user) {
+      req.app.get("io").emit("dataUpdated");
+
       res.json({
         success: true,
         user,

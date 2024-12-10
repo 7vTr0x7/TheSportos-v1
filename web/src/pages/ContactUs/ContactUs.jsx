@@ -4,6 +4,7 @@ import Header from "./../../components/Header";
 import Footer from "./../../components/Footer";
 import UserForm from "./features/UserForm/UserForm";
 import GoogleMap from "./features/GoogleMap/GoogleMap";
+import {Toaster} from "react-hot-toast"
 
 const ContactUs = () => {
   return (
@@ -20,8 +21,11 @@ const ContactUs = () => {
           <UserForm />
           <GoogleMap />
         </div>
+
       </>
       <Footer />
+      <Toaster />
+
     </>
   );
 };

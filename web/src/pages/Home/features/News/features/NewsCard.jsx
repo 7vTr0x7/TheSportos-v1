@@ -15,7 +15,9 @@ const NewsCard = ({ news, newsPage }) => {
           alt={news.category}
           src={news.image_url}
           className={`w-full object-cover ${
-            newsPage ? "h-60 md:h-90" : "h-60 md:h-90"
+            newsPage
+              ? "h-60 md:h-90 w-full md:w-[400px]"
+              : "w-full md:w-[400px] h-60 md:h-90"
           } rounded-md`}
         />
       </div>

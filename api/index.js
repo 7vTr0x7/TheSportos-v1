@@ -16,8 +16,11 @@ const corsOptions = {
     "https://the-sportos-v1-frontend.vercel.app",
     "https://the-sportos-admin.vercel.app",
     "http://localhost:5173",
+    "http://localhost:5174",
+    "http://localhost:5175",
   ],
   credentials: true,
+  allowedHeaders: ["Content-Type", "Authorization"],
 };
 
 app.use(cors(corsOptions));
@@ -35,10 +38,9 @@ const io = new Server(httpServer, {
   cors: {
     origin: corsOptions.origin,
     credentials: true,
+    allowedHeaders: ["Content-Type", "Authorization"],
   },
   transports: ["websocket", "polling"], // Force WebSocket transport for better compatibility
-  wssEngine: ["ws", "wss"], // Specify the WebSocket engine to use
-  path: "/socket.io/", // Ensure the correct path is set for WebSocket requests
 });
 
 app.set("io", io);

@@ -492,8 +492,6 @@ export const getUsers = async (req, res) => {
   try {
     const users = await User.find();
     if (users.length > 0) {
-      req.app.get("io").emit("dataUpdated");
-
       res.json({
         success: true,
         users,
@@ -680,6 +678,102 @@ export const deleteLeague = async (req, res) => {
     res.status(500).json({
       success: false,
       message: "Failed to delete league ",
+      error: error.message,
+    });
+  }
+};
+export const deleteUser = async (req, res) => {
+  try {
+    const user = await User.findByIdAndDelete(req.params.id);
+    if (user) {
+      req.app.get("io").emit("dataUpdated");
+
+      res.json({
+        success: true,
+        user,
+      });
+    } else {
+      res.status(404).json({
+        success: true,
+        message: "user not found",
+      });
+    }
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to delete user ",
+      error: error.message,
+    });
+  }
+};
+export const deleteBlog = async (req, res) => {
+  try {
+    const blog = await Blog.findByIdAndDelete(req.params.id);
+    if (blog) {
+      req.app.get("io").emit("dataUpdated");
+
+      res.json({
+        success: true,
+        blog,
+      });
+    } else {
+      res.status(404).json({
+        success: true,
+        message: "blog not found",
+      });
+    }
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to delete blog ",
+      error: error.message,
+    });
+  }
+};
+export const deleteStarPerformer = async (req, res) => {
+  try {
+    const player = await StarPerformers.findByIdAndDelete(req.params.id);
+    if (player) {
+      req.app.get("io").emit("dataUpdated");
+
+      res.json({
+        success: true,
+        player,
+      });
+    } else {
+      res.status(404).json({
+        success: true,
+        message: "player not found",
+      });
+    }
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to delete player ",
+      error: error.message,
+    });
+  }
+};
+export const deleteStanding = async (req, res) => {
+  try {
+    const standing = await Standings.findByIdAndDelete(req.params.id);
+    if (standing) {
+      req.app.get("io").emit("dataUpdated");
+
+      res.json({
+        success: true,
+        standing,
+      });
+    } else {
+      res.status(404).json({
+        success: true,
+        message: "standing not found",
+      });
+    }
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to delete standing ",
       error: error.message,
     });
   }
@@ -872,6 +966,93 @@ export const updateLeague = async (req, res) => {
     res.status(500).json({
       success: false,
       message: "Failed to update league ",
+      error: error.message,
+    });
+  }
+};
+export const updateBlog = async (req, res) => {
+  try {
+    const blog = await Blog.findByIdAndUpdate(req.params.id, req.body, {
+      new: true,
+    });
+    if (blog) {
+      req.app.get("io").emit("dataUpdated");
+
+      res.json({
+        success: true,
+        blog,
+      });
+    } else {
+      res.status(404).json({
+        success: true,
+        message: "blog not found",
+      });
+    }
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to update blog ",
+      error: error.message,
+    });
+  }
+};
+export const updateStarPerformer = async (req, res) => {
+  try {
+    const player = await StarPerformers.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      {
+        new: true,
+      }
+    );
+    if (player) {
+      req.app.get("io").emit("dataUpdated");
+
+      res.json({
+        success: true,
+        player,
+      });
+    } else {
+      res.status(404).json({
+        success: true,
+        message: "player not found",
+      });
+    }
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to update player ",
+      error: error.message,
+    });
+  }
+};
+
+export const updateStanding = async (req, res) => {
+  try {
+    const standing = await Standings.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      {
+        new: true,
+      }
+    );
+    if (standing) {
+      req.app.get("io").emit("dataUpdated");
+
+      res.json({
+        success: true,
+        standing,
+      });
+    } else {
+      res.status(404).json({
+        success: true,
+        message: "standing not found",
+      });
+    }
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: "Failed to update standing ",
       error: error.message,
     });
   }

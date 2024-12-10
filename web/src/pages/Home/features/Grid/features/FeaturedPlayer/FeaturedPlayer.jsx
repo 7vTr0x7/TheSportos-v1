@@ -33,10 +33,7 @@ const FeaturedPlayer = () => {
     getFeaturedPlayer(apiUrl);
     // Initialize WebSocket connection
 
-    const socket = io(apiUrl, {
-      transports: ["websocket", "polling"], // Allow fallback
-      path: "/socket.io/", // Match server's path
-    });
+    const socket = io(apiUrl, { transports: ["websocket", "polling"] });
 
     socket.on("dataUpdated", () => {
       console.log("Data updated, refreshing...");

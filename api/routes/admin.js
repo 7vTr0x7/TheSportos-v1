@@ -19,20 +19,25 @@ import {
   addTrophy,
   adminLogin,
   deleteBanner,
+  deleteBlog,
   deleteFeaturedPlayer,
   deleteLeague,
   deleteMatch,
   deletePlayer,
   deleteSponsor,
+  deleteStarPerformer,
   deleteTrophy,
+  deleteUser,
   getUsers,
   registerAdmin,
   updateBanner,
+  updateBlog,
   updateFeaturePlayer,
   updateLeague,
   updateMatch,
   updatePlayer,
   updateSponsor,
+  updateStarPerformer,
   updateTrophy,
 } from "../controllers/admin.js";
 // import { isAuthenticated } from "../middlewares/auth.js";
@@ -48,7 +53,9 @@ router.post("/add/multiple/matches", addMultipleMatches);
 router.delete("/delete/match/:id", deleteMatch);
 router.put("/update/match/:id", updateMatch);
 
-router.post("/add/star-performers", addStarPerformer);
+router.post("/add/star-performer", addStarPerformer);
+router.put("/update/star-performer/:id", updateStarPerformer);
+router.delete("/delete/star-performer/:id", deleteStarPerformer);
 router.post("/add/multiple/star-performers", addMultipleStarPerformers);
 
 router.post("/add/trophy", addTrophy);
@@ -74,6 +81,8 @@ router.delete("/delete/player/:id", deletePlayer);
 router.post("/add/multiple/players", addMultiplePlayers);
 
 router.post("/add/blog", addBlog);
+router.put("/update/blog/:id", updateBlog);
+router.delete("/delete/blog/:id", deleteBlog);
 router.post("/add/multiple/blogs", addMultipleBlogs);
 
 router.post("/add/standing", addStanding);
@@ -85,5 +94,6 @@ router.delete("/delete/league/:id", deleteLeague);
 router.post("/add/multiple/leagues", addMultipleLeagues);
 
 router.get("/get/all/users", getUsers);
+router.delete("/delete/single/user/:id", deleteUser);
 
 export default router;

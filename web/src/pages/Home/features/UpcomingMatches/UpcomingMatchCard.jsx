@@ -1,8 +1,7 @@
 import React from "react";
-import { league } from "../../../../images";
 import { HiArrowLongRight } from "react-icons/hi2";
-import MatchCard from "../../../../components/MatchCardLayout";
 import { useNavigate } from "react-router-dom";
+import MatchCard from "../../../../components/MatchCardLayout";
 
 const UpcomingMatchCard = ({ match }) => {
   const navigate = useNavigate();
@@ -10,7 +9,11 @@ const UpcomingMatchCard = ({ match }) => {
   return (
     <div className="bg-[#151515] text-gray-300 rounded-lg mb-4 p-4 md:p-6 shadow-lg w-[18rem] md:w-[18rem] h-[350px] flex flex-col">
       <div className="flex justify-center py-4">
-        <img alt={match?.competition} src={league} className="h-16" />
+        <img
+          alt={match?.competition}
+          src={match?.league_logo_url}
+          className="h-16"
+        />
       </div>
       <div className="text-center text-xs flex-grow">
         <p>

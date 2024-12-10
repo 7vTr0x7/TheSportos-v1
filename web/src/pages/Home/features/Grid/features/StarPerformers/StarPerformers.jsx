@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { io } from "socket.io-client";
+
 
 const StarPerformers = () => {
   const [players, setPlayers] = useState([]);
@@ -26,9 +28,25 @@ const StarPerformers = () => {
     }
   };
 
+
+
   useEffect(() => {
+    // Initial banner fetch
     getStarPerformersData(apiUrl);
-  }, []);
+    // Initialize WebSocket connection
+    const socket = io(apiUrl, { transports: ["websocket", "polling"] });
+
+    // Listen for data updates
+    socket.on("dataUpdated", () => {
+      console.log("Banner data updated, refreshing...");
+      getStarPerformersData(apiUrl);
+    });
+
+    // Clean up the WebSocket connection on component unmount
+    return () => {
+      socket.disconnect();
+    };
+  }, [apiUrl]);
 
   return (
     players &&
@@ -60,7 +78,7 @@ const StarPerformers = () => {
                 <img
                   alt={player.name}
                   src={player.imageUrl}
-                  className="md:h-8 h-5 rounded-full"
+                  className="md:h-8 h-5 md:w-8 w-5 rounded-full"
                 />
                 <p>{player.name}</p>
               </div>
