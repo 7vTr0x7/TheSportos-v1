@@ -28,18 +28,14 @@ const StarPerformers = () => {
   };
 
   useEffect(() => {
-    // Initial banner fetch
     getStarPerformersData(apiUrl);
-    // Initialize WebSocket connection
     const socket = io(apiUrl, { transports: ["websocket", "polling"] });
 
-    // Listen for data updates
     socket.on("dataUpdated", () => {
       console.log("Banner data updated, refreshing...");
       getStarPerformersData(apiUrl);
     });
 
-    // Clean up the WebSocket connection on component unmount
     return () => {
       socket.disconnect();
     };
