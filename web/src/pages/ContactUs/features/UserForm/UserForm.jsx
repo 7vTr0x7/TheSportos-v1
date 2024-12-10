@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { toast,Toaster } from "react-hot-toast";
+import { toast, Toaster } from "react-hot-toast";
 
 const UserForm = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +11,8 @@ const UserForm = () => {
   });
 
   const [errors, setErrors] = useState({});
+
+  const apiUrl = import.meta.env.VITE_API_URL;
 
   const validate = () => {
     const validationErrors = {};
@@ -37,7 +39,7 @@ const UserForm = () => {
     const toastId = toast.loading("Submitting...");
 
     try {
-      const res = await fetch("http://localhost:4000/api/user/contact-us", {
+      const res = await fetch(`${apiUrl}/api/user/contact-us`, {
         method: "POST",
         credentials: "include",
         headers: {
