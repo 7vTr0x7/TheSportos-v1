@@ -11,7 +11,6 @@ const Standings = () => {
   const [stats, setStats] = useState([]);
   const standings = useSelector((state) => state.standings.standings);
 
-  // Set the initial league value if `leagues` is updated
   useEffect(() => {
     if (leagues.length > 0 && !league) {
       setLeague(leagues[0]);

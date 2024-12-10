@@ -25,6 +25,7 @@ import {
   deleteMatch,
   deletePlayer,
   deleteSponsor,
+  deleteStanding,
   deleteStarPerformer,
   deleteTrophy,
   deleteUser,
@@ -37,6 +38,7 @@ import {
   updateMatch,
   updatePlayer,
   updateSponsor,
+  updateStanding,
   updateStarPerformer,
   updateTrophy,
 } from "../controllers/admin.js";
@@ -86,6 +88,8 @@ router.delete("/delete/blog/:id", deleteBlog);
 router.post("/add/multiple/blogs", addMultipleBlogs);
 
 router.post("/add/standing", addStanding);
+router.put("/update/standing/:id", updateStanding);
+router.delete("/delete/standing/:id", deleteStanding);
 router.post("/add/multiple/standings", addMultipleStandings);
 
 router.post("/add/league", addLeague);

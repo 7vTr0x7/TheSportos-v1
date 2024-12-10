@@ -22,6 +22,7 @@ const StandingsCard = ({ stats }) => {
         </div>
         {/* Data Section */}
         {standings &&
+          standings.sort((a, b) => a.position - b.position) &&
           standings.map((standing, index) => (
             <div
               key={standing.club}
