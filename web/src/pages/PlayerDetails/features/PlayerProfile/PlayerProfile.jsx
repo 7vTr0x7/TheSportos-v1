@@ -12,7 +12,6 @@ const PlayerProfile = ({ player }) => {
         <div>
           <p className="text-3xl font-bold">{player.name}</p>
           <p className="text-gray-400 text-sm my-1">{player.position}</p>
-          <p className="text-gray-400 text-sm">{player.email}</p>
         </div>
       </div>
     </div>
