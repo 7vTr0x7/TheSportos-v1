@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-
 const StarPerformers = () => {
   const [players, setPlayers] = useState([]);
 
@@ -27,8 +26,6 @@ const StarPerformers = () => {
       console.log("failed to get Star performers Data", error.message);
     }
   };
-
-
 
   useEffect(() => {
     // Initial banner fetch
@@ -68,33 +65,35 @@ const StarPerformers = () => {
             </div>
           </div>
 
-          {players.map((player, index) => (
-            <div
-              key={player._id}
-              className={`grid grid-cols-12 mt-4 text-gray-50 text-xs md:text-sm lg:text-base py-3 px-4 md:px-6 ${
-                index % 2 === 0 ? "bg-[#151515]" : "bg-transparent"
-              }`}>
-              <div className="col-span-3 flex gap-2 items-center">
-                <img
-                  alt={player.name}
-                  src={player.imageUrl}
-                  className="md:h-8 h-5 md:w-8 w-5 rounded-full"
-                />
-                <p>{player.name}</p>
+          {players &&
+            players.sort((a, b) => a.rank - b.rank) &&
+            players?.map((player, index) => (
+              <div
+                key={player._id}
+                className={`grid grid-cols-12 mt-4 text-gray-50 text-xs md:text-sm lg:text-base py-3 px-4 md:px-6 ${
+                  index % 2 === 0 ? "bg-[#151515]" : "bg-transparent"
+                }`}>
+                <div className="col-span-3 flex gap-2 items-center">
+                  <img
+                    alt={player.name}
+                    src={player.imageUrl}
+                    className="md:h-8 h-5 md:w-8 w-5 rounded-full"
+                  />
+                  <p>{player.name}</p>
+                </div>
+                <p className="col-span-3 flex items-center">
+                  {player.achievement}
+                </p>
+                <p className="col-span-3 flex items-center">
+                  {player.tournament}
+                </p>
+                <div className="flex gap-4 justify-end items-center col-span-3">
+                  <p>{player.goals}</p>
+                  <p>{player.assists}</p>
+                  <p>{player.matches_played}</p>
+                </div>
               </div>
-              <p className="col-span-3 flex items-center">
-                {player.achievement}
-              </p>
-              <p className="col-span-3 flex items-center">
-                {player.tournament}
-              </p>
-              <div className="flex gap-4 justify-end items-center col-span-3">
-                <p>{player.goals}</p>
-                <p>{player.assists}</p>
-                <p>{player.matches_played}</p>
-              </div>
-            </div>
-          ))}
+            ))}
         </div>
       </div>
     )

@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const StarPerformersSchema = new mongoose.Schema({
   rank: {
-    type: String,
+    type: Number,
     required: true,
   },
   name: {
